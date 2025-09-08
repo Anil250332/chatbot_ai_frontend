@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
  
-    socketRef.current = io("http://localhost:3000");
+    socketRef.current = io("https://chatbot-ai-backend-3.onrender.com");
     const socketInstance = socketRef.current
 
     socketInstance.on('ai-response', (response) => {
